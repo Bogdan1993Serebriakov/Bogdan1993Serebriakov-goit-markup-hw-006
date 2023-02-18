@@ -60,11 +60,13 @@
     <!--END HEADER BLOCK-->
     <!--MAIN BLOCK -->
     <main>
-      <!-- HERO SECTION -->
+      <!-- HERO SECTION -------------------------------------------------------------->
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-btn btn" type="button" data-modal-open>Order Service</button>
+          <button class="hero-btn btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!--END HERO SECTION------------------------------------------------------------>
@@ -470,9 +472,9 @@
           </div>
         </div>
       </section>
-      <!-- END CUSOMERS SECTION---------------------------------------------------- -->
+      <!-- END CUSOMERS SECTION------------------------------------------------------->
     </main>
-    <!--END MAIN BLOCK------------------------------------------------------------- -->
+    <!--END MAIN BLOCK---------------------------------------------------------------->
     <!-- FOOTER BLOCK ---------------------------------------------------------------->
     <footer class="footer">
       <div class="footer-box container">
@@ -533,8 +535,8 @@
         </div>
       </div>
     </footer>
-    <!--END FOOTER BLOCK------------------------------------------------------------------->
-    <!--MODAL WINDOW FOR HERO SECTION------------------------------------------------>
+    <!--END FOOTER BLOCK-------------------------------------------------------------->
+    <!--MODAL WINDOW FOR HERO SECTION------------------------------------------------->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
@@ -542,9 +544,45 @@
             <use href="./icons.svg#icon-close-cross"></use>
           </svg>
         </button>
+        <form class="form" autocomplete="off">
+          <h2>Leave your contacts and we will call you back</h2>
+          <div class="form-field">
+            <label class="form-label" for="name"> Name </label>
+            <input class="form-input" type="text" name="name" id="name" />
+          </div>
+          <div class="form-field">
+            <label for="phone"> Phone </label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-field">
+            <label for="comment">Comment</label>
+            <textarea
+              name=""
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox">
+              I accept the terms and conditions of the Privacy Policy
+            </label>
+            
+          </div>
+          <div class="form-field"></div>
+
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
-    <!-- ------------------------------------------------------------------------->
+
+    <!-------------------------------------------------------------------------------->
 
     <script src="./js/modal.js"></script>
   </body>

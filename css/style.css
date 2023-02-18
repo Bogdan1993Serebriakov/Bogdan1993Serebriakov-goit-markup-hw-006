@@ -202,8 +202,11 @@ HEADER BLOCK (FOR ALL PAGES)
   padding-top: 24px;
   padding-bottom: 24px;
 }
-/*================================================================ */
-/* studio-portfolio-contacts (NAV HEADER AND ADDRESS) ------------------------------*/
+/*
+================================================================
+studio-portfolio-contacts (NAV HEADER AND ADDRESS)
+================================================================
+*/
 .header-nav {
   margin-right: auto;
 }
@@ -246,8 +249,11 @@ HEADER BLOCK (FOR ALL PAGES)
 .address-link:focus {
   color: var(--ocean);
 }
-/* ------------------------------------------------------------------------------------------- */
-/* FOOTER BLOCK (FOR ALL PAGES)--------------------------------------------------------------*/
+/* 
+=======================================================================================
+FOOTER BLOCK (FOR ALL PAGES)
+=======================================================================================
+*/
 .footer {
   color: var(--cornflower);
   background-color: var(--navy-blue);
@@ -306,8 +312,11 @@ HEADER BLOCK (FOR ALL PAGES)
   fill: var(--cloud);
 } */
 
-/* --------------------------------------------------------------------------------------- */
-/* index.html/HERO section ------------------------------------------------------------- */
+/* 
+=====================================================================================
+index.html/HERO section 
+=====================================================================================
+*/
 .hero {
   max-width: 1440px;
   height: 600px;
@@ -352,8 +361,12 @@ HEADER BLOCK (FOR ALL PAGES)
   background-color: var(--ocean);
 }
 
-/* ------------------------------------------------------------------------------------ */
-/* index.html/FEATURE section ---------------------------------------------------------*/
+
+/* 
+================================================================================
+index.html/FEATURE section 
+================================================================================
+*/
 .feature-list {
   display: flex;
   align-items: flex-start;
@@ -387,8 +400,12 @@ HEADER BLOCK (FOR ALL PAGES)
 .feature-text {
   margin-top: 8px;
 }
-/* ------------------------------------------------------------------------ */
-/* index.html/examples section -----------------------------------------------*/
+
+/* 
+====================================================================================
+index.html/examples section
+====================================================================================
+*/
 .examples {
   padding-top: 0;
 }
@@ -633,7 +650,6 @@ overflow: hidden;
 MODAL WINDOW FOR HERO SECTION
 ===============================================================
 */
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -690,4 +706,11 @@ MODAL WINDOW FOR HERO SECTION
   fill: var(--white);
   border: none;
   cursor: pointer;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  margin-right: 24px;
 }
