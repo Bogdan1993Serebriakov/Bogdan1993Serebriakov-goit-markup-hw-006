@@ -533,6 +533,20 @@
             </li>
           </ul>
         </div>
+        <div class="form-footer-box">
+          <form>
+            <p class="subscribe-title">Subscribe</p>
+            <label class="form-label" for="email"></label>
+            <input
+              class="footer-input"
+              type="email"
+              name="email"
+              id=""
+              placeholder="E-mail"
+            />
+            <button class="footer-btn btn" type="submit">Subscribe</button>
+          </form>
+        </div>
       </div>
     </footer>
     <!--END FOOTER BLOCK-------------------------------------------------------------->
@@ -545,39 +559,40 @@
           </svg>
         </button>
         <form class="form" autocomplete="off">
-          <h2>Leave your contacts and we will call you back</h2>
+          <p class="form-title">
+            Leave your contacts and we will call you back
+          </p>
           <div class="form-field">
-            <label class="form-label" for="name"> Name </label>
+            <label class="form-label" for="name">Name</label>
             <input class="form-input" type="text" name="name" id="name" />
           </div>
           <div class="form-field">
-            <label for="phone"> Phone </label>
-            <input type="tel" name="phone" id="phone" />
+            <label class="form-label" for="phone"> Phone </label>
+            <input class="form-input" type="tel" name="phone" id="phone" />
           </div>
           <div class="form-field">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" name="email" id="email" />
           </div>
           <div class="form-field">
-            <label for="comment">Comment</label>
+            <label class="form-label" for="comment">Comment</label>
             <textarea
+              class="form-input form-texarea"
+              resize="none"
               name=""
               id="comment"
-              cols="30"
-              rows="10"
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="">
+          <div class="form-checkbox-box">
             <input type="checkbox" id="checkbox" />
-            <label for="checkbox">
+            <label class="form-checkbox" for="checkbox">
               I accept the terms and conditions of the Privacy Policy
             </label>
-            
           </div>
           <div class="form-field"></div>
 
-          <button type="submit">Send</button>
+          <button class="form-btn btn" type="submit">Send</button>
         </form>
       </div>
     </div>
