@@ -21,6 +21,8 @@
   /* border */
   --border-subs-footer: 1px solid rgba(255, 255, 255, 0.3);
   --border-radius: 4px;
+
+  /* text style */
 }
 /* animation */
 /* @keyframes move-top {
@@ -105,6 +107,14 @@ COMMON BLOCK
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* text decoration */
+.middle-text {
+  color: var(--navy-blue);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 /* 
 ====================================
 END COMMON BLOCK
@@ -165,6 +175,17 @@ BTN (for all pages)
   letter-spacing: 0.04em;
   border: 1px solid transparent;
 }
+.main-btn {
+  min-width: 169px;
+  color: var(--white);
+  background-color: var(--iris);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin-top: 48px;
+  transition-duration: var(--main-tr-dur);
+  transition-timing-function: var(--main-tr-t-f);
+}
 .container {
   width: 1158px;
   padding: 0 15px;
@@ -214,11 +235,8 @@ studio-portfolio-contacts (NAV HEADER AND ADDRESS)
 .header-nav {
   margin-right: auto;
 }
+
 .nav-link {
-  color: var(--navy-blue);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
   position: relative;
 }
 
@@ -394,7 +412,7 @@ index.html/HERO section
   text-align: center;
   margin: 0 auto;
 }
-.hero-btn {
+.main-btn {
   min-width: 169px;
   color: var(--white);
   background-color: var(--iris);
@@ -405,8 +423,8 @@ index.html/HERO section
   transition-duration: var(--main-tr-dur);
   transition-timing-function: var(--main-tr-t-f);
 }
-.hero-btn:hover,
-.hero-btn:focus {
+.main-btn:hover,
+.main-btn:focus {
   background-color: var(--ocean);
 }
 
@@ -716,6 +734,9 @@ MODAL WINDOW FOR HERO SECTION
   transform: translate(-50%, -50%);
   width: 408px;
   min-height: 584px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -752,19 +773,59 @@ MODAL WINDOW FOR HERO SECTION
   border: none;
   cursor: pointer;
 }
-
-.form-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
+.modal-form {
+}
+.modal-form-title {
+  display: block;
   text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--navy-blue);
   margin-top: 72px;
   margin-bottom: 16px;
 }
 
-.form-label {
+.modal-form-lable {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+.modal-form-group {
+  position: relative;
+}
+
+.modal-form-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline-color: transparent;
+  transition-duration: var(--main-tr-dur);
+  transition-timing-function: var(--main-tr-t-f);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.modal-form-input:focus,
+.modal-form-input:focus-visible {
+  outline-color: var(--iris);
+}
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition-duration: fill var(--main-tr-dur);
+  transition-timing-function: fill var(--main-tr-t-f);
+}
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--iris);
+}
+
+/* .form-label {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.3;
@@ -798,7 +859,8 @@ MODAL WINDOW FOR HERO SECTION
 }
 .textarea {
   resize: none;
-  height: 120px;
+  padding-top: 8px;
+  padding-left: 16px;
 }
 
 .form-checkbox-box {
@@ -813,7 +875,7 @@ MODAL WINDOW FOR HERO SECTION
   line-height: 16px;
   letter-spacing: 0.04em;
   color: #757575;
-}
+} */
 
 /* .form-btn {
 } */

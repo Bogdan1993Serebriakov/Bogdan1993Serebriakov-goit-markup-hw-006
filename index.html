@@ -30,13 +30,13 @@
         </a>
         <nav class="header-nav">
           <ul class="nav-list list">
-            <li class="nav-item">
+            <li class="nav-item middle-text">
               <a class="nav-link current link" href="./index.html">Studio</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item middle-text">
               <a class="nav-link link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item middle-text">
               <a class="nav-link link" href="">Contacts</a>
             </li>
           </ul>
@@ -64,7 +64,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-btn btn" type="button" data-modal-open>
+          <button class="main-btn btn" type="button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -533,9 +533,7 @@
             </li>
           </ul>
         </div>
-
         <!--FOOTER-FORM-BLOCK -->
-
         <form
           class="subscribe-form"
           name="subscribe_form"
@@ -554,12 +552,12 @@
                 placeholder="E-mail"
               />
             </label>
-
-            <button class="subscribe-btn btn" type="submit">Subscribe
+            <button class="subscribe-btn btn" type="submit">
+              Subscribe
               <svg class="subscribe-btn-icons" width="24px" height="24px">
-                  <use href="./icons.svg#icon-send"></use>
+                <use href="./icons.svg#icon-send"></use>
+              </svg>
             </button>
-            
           </div>
         </form>
       </div>
@@ -574,10 +572,72 @@
           </svg>
         </button>
         <!-- FORM -->
-        <form class="form" autocomplete="on" method="post">
-          <p class="form-title">
-            Leave your contacts and we will call you back
-          </p>
+        <p class="modal-form-title middle-text">
+          Leave your contacts and we will call you back
+        </p>
+
+        <form
+          class="modal-form"
+          name="modal_form"
+          autocomplete="on"
+          method="post"
+        >
+          <!-- Name field -->
+          <label class="modal-form-lable" for="user_name">Name</label>
+          <div class="modal-form-group" >
+            <input class="modal-form-input" type="text" id="user_name" />
+            <svg class="modal-form-icon" width="12" height="12">
+              <use href="./icons.svg#icon-name"></use>
+            </svg>
+          </div>
+          <!-- Phone field -->
+          <label class="modal-form-lable" for="user_phone">Phone</label>
+          <div class="modal-form-group" >
+            <input class="modal-form-input" type="text" id="user_phone" required />
+            <svg class="modal-form-icon" width="12" height="12">
+              <use href="./icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <!-- Email field -->
+          <label class="modal-form-lable" for="user_email">Email</label>
+          <div class="modal-form-group" >
+            <input class="modal-form-input" type="text" id="user_email" required />
+            <svg class="modal-form-icon" width="12" height="12">
+              <use href="./icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <!-- Comment field -->
+          <label class="modal-form-lable" for="user_comment">Comment</label>
+          <textarea
+            class="modal-form-comment"
+            name="user_comment"
+            id="user_comment"
+            cols=""
+            rows="6"
+            placeholder="Text input"
+          ></textarea>
+          <!-- Privacy Policy -->
+          <label class="modal-form-agreement">
+            <input
+              class="modal-form-checkbox"
+              type="checkbox"
+              name="user_agreement"
+              required
+            />
+            <span class="modal-form-desc"
+              >I accept the terms and conditions of the<a
+                class="modal-form-link"
+                href=""
+                >Privacy Policy</a
+              ></span
+            >
+          </label>
+          <!-- BTN SEND -->
+          <button class="modal-form-btn main-btn btn" type="submit" disabled>
+            Send
+          </button>
+        </form>
+        <!-- <form class="form" autocomplete="on" method="post">
           <div class="form-field">
             <label class="form-label" for="name">Name</label>
             <input class="form-input" type="text" name="name" id="name" />
@@ -594,11 +654,12 @@
             <label class="form-label" for="comment">Comment</label>
             <textarea
               class="textarea"
-              name=""
+              name="user_message"
               id="comment"
+              cols=""
+              rows="6"
               placeholder="Text input"
-            >
-            </textarea>
+            ></textarea>
           </div>
           <div class="form-checkbox-box">
             <input type="checkbox" id="checkbox" />
@@ -606,10 +667,8 @@
               I accept the terms and conditions of the Privacy Policy
             </label>
           </div>
-          <div class="form-field"></div>
-
           <button class="form-btn btn" type="submit">Send</button>
-        </form>
+        </form> -->
         <!--END FORM--------->
       </div>
     </div>
