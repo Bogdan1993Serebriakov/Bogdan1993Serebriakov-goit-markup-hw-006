@@ -544,6 +544,7 @@
                 name="user_email"
                 id="subscribe_email"
                 placeholder="E-mail"
+                required
               />
             </label>
             <button class="subscribe-btn btn" type="submit">
@@ -574,7 +575,12 @@
           <!-- Name field -->
           <label class="modal-form-lable" for="user_name">Name</label>
           <div class="modal-form-group">
-            <input class="modal-form-input" type="text" id="user_name" />
+            <input
+              class="modal-form-input"
+              type="text"
+              id="user_name"
+              required
+            />
             <svg class="modal-form-icon" width="12" height="12">
               <use href="./icons.svg#icon-name"></use>
             </svg>
